@@ -67,6 +67,7 @@ body {
   min-height: 100vh;
   background: hsl(185deg, 75%, 39%);
   font-family: "Kumbh Sans", sans-serif;
+  overflow: hidden;
 }
 
 h1 {
