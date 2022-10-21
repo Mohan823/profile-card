@@ -1,0 +1,90 @@
+@import "partials/partials";
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: $clr-primary-dark-cyan;
+    font-family: $ff-primary;
+}
+
+h1 {
+    margin: 4.5rem 0 0 0;
+    font-size: 1.125rem;
+    font-weight: $fw-bold;
+    color: $clr-primary-desate-blue;
+
+    span {
+        color: rgba(150, 150, 150, 0.9);
+    }
+}
+
+p {
+    span {
+        color: $clr-neutral-dark-gray;
+        font-size: 15px;
+    }
+
+    margin-bottom: 1.5rem;
+}
+
+.bg-top,
+.bg-bottom {
+    position: absolute;
+    z-index: -1;
+}
+
+.bg-top {
+    bottom: 50%;
+    right: 50%;
+}
+
+.bg-bottom {
+    top: 50%;
+    left: 50%;
+}
+
+// utility Classes
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.pattern {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.avator {
+    width: 7rem;
+    border-radius: 50%;
+    margin: -3.5rem auto;
+    border: 5px solid #fff;
+}
+
+.stats {
+    border-top: 1px solid rgba(150, 150, 150, 0.3);
+    padding: 1.5rem 2rem;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    text-align: center;
+    color: $clr-primary-desate-blue;
+    font-weight: $fw-bold;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    span {
+        font-size: 10px;
+        display: block;
+        font-weight: $fw-bold;
+        letter-spacing: 1px;
+    }
+}
